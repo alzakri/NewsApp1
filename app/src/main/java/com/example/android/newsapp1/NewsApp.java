@@ -8,43 +8,44 @@ package com.example.android.newsapp1;
 public class NewsApp {
 
     /** Magnitude of the earthquake */
-    private double mMagnitude;
+    private String mTitle;
 
     /** Location of the earthquake */
-    private String mLocation;
+    private String mDate;
 
     /** Time of the earthquake */
-    private long mTimeInMilliseconds;
+    private String mAuthor;
 
     /** Website URL of the earthquake */
     private String mUrl;
 
-    public NewsApp(double magnitude, String location, long timeInMilliseconds, String url) {
-        mMagnitude = magnitude;
-        mLocation = location;
-        mTimeInMilliseconds = timeInMilliseconds;
+    public NewsApp(String title, String date, String author, String url) {
+        mTitle = title;
+        mDate = date;
+        mAuthor = author;
         mUrl = url;
+
     }
 
     /**
      * Returns the magnitude of the earthquake.
      */
-    public double getMagnitude() {
-        return mMagnitude;
+    public String getTitle() {
+        return mTitle;
     }
 
     /**
      * Returns the location of the earthquake.
      */
-    public String getLocation() {
-        return mLocation;
+    public String getDate() {
+        return mDate;
     }
 
     /**
      * Returns the time of the earthquake.
      */
-    public long getTimeInMilliseconds() {
-        return mTimeInMilliseconds;
+    public String getAuthor() {
+        return mAuthor;
     }
 
     /**

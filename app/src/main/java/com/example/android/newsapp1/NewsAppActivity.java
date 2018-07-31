@@ -128,6 +128,8 @@ public class NewsAppActivity extends AppCompatActivity
             mAdapter.addAll(earthquakes);
         }
     }
+    // 261431041833
+
 
     @Override
     public void onLoaderReset(Loader<List<NewsApp>> loader) {

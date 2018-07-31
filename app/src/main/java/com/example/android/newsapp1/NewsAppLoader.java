@@ -34,9 +34,9 @@ public class NewsAppLoader extends AsyncTaskLoader<List<NewsApp>> {
             return null;
         }
 
-        // Perform the network request, parse the response, and extract a list of earthquakes.
-        List<NewsApp> earthquakes = com.example.android.newsapp.QueryUtils.fetchEarthquakeData(mUrl);
-        return earthquakes;
+        // Perform the network request, parse the response, and extract a list of newsApps.
+        List<NewsApp> newsApps = com.example.android.newsapp1.QueryUtils.fetchEarthquakeData(mUrl);
+        return newsApps;
     }
 }
 
